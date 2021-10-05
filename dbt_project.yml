@@ -36,6 +36,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 #       # Applies to all files under models/example/
 #       example:
 #           materialized: view
-
+#google_ads_schema: 'GOOGLE_ADS_DEMO'
 vars:
-    google_ads_schema: 'GOOGLE_ADS_DEMO'
+    google_ads_source:
+      google_ads_schema: 'dossier_google_ads'
+      google_ads_database: 'Primelis'
+      google_ads__click_performance: dossier_google_ads.dossier_click_performance
+      google_ads__final_url_performance: dossier_google_ads.dossier_final_url_perfomance
+      google_ads__criteria_performance: dossier_google_ads.dossier_criteria_perfomance
